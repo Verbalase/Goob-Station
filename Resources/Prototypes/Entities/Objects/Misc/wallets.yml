@@ -1,0 +1,96 @@
+- type: entity
+  parent: BaseItem
+  id: BasicWallet
+  name: wallet
+  description: Broke ass mf. #Broke ass mf.
+  components:
+  - type: Sprite
+    sprite: Objects/Economy/wallets.rsi
+    layers:
+    - state: basicwallet
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots: [belt]
+    quickEquip: false
+  - type: Storage
+    grid:
+    - 0,0,3,1
+    whitelist:
+      components:
+        - IdCard
+        - Cash
+        - EncryptionKey
+      tags:
+        - Matchstick
+        - Figurine
+        - Paper
+        - Document
+        - Trash
+        - Knife
+        - Screwdriver
+        - Cigarette
+        - Pill
+        - FoodSnack
+        - Pen
+        - PowerCell
+    maxItemSize: Small
+  - type: ItemMapper
+    mapLayers:
+      basicidwallet:
+        whitelist:
+          tags:
+          - GreyCard
+      hopidwallet:
+        whitelist:
+          tags:
+          - SilverCard
+      capidwallet:
+        whitelist:
+          tags:
+          - GoldCard
+      syndieidwallet:
+        whitelist:
+          tags:
+          - BlackCard
+      centcomidwallet:
+        whitelist:
+          tags:
+          - BlueCard
+      moneywallet1:
+        minCount: 2
+        whitelist:
+          components:
+          - Cash
+      moneywallet2:
+        minCount: 4
+        whitelist:
+          components:
+          - Cash
+    sprite: Objects/Economy/wallets.rsi
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  # to prevent bag open/honk spam
+  - type: UseDelay
+    delay: 0.1
+
+- type: entity
+  parent: BasicWallet
+  id: ClownWallet
+  name: dollah mchonkers
+  description: It's a backpack made by Honk! Co.
+  components:
+  - type: Sprite
+    sprite: Objects/Economy/wallets.rsi
+    layers:
+    - state: clownwallet
+  - type: Storage
+    storageOpenSound:
+      collection: BikeHorn

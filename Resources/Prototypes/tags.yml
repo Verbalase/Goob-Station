@@ -61,7 +61,13 @@
   id: BikeHorn
 
 - type: Tag
+  id: BlackCard
+
+- type: Tag
   id: Bloodpack
+
+- type: Tag
+  id: BlueCard
 
 - type: Tag
   id: BodyBag
@@ -635,10 +641,16 @@
   id: Goat
 
 - type: Tag
+  id: GoldCard
+
+- type: Tag
   id: GPS
 
 - type: Tag
   id: Grenade
+
+- type: Tag
+  id: GreyCard
 
 - type: Tag
   id: HudMedical
@@ -1118,6 +1130,9 @@
 
 - type: Tag
   id: Sidearm
+
+- type: Tag
+  id: SilverCard
 
 - type: Tag
   id: SkeletonMotorcycleKeys
