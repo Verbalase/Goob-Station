@@ -32,7 +32,8 @@
 - type: startingGear
   id: BlueshieldOfficerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBlue
+    neck: ClothingNeckCloakNanotrasen
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
     back: ClothingBackpackCaptainFilled
     shoes: ClothingShoesBootsCombatFilled
     head: ClothingHeadHelmetBasic
